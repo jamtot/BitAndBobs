@@ -21,8 +21,12 @@ def get_distance(unit1, unit2):
     return (result*sign), sign
 
 def get_sign(unit1, unit2):
-    return not (unit1-unit2 >= 0 and unit1-unit2 <= 180) or (
-            unit1-unit2 <= -180 and unit1-unit2 >= -360)
+    phi = (unit2-unit1) % 360
+    sign = 1
+    if ((phi >= 0 and phi <= 180) or (
+            phi <= -180 and phi >= -360)):
+        sign = -1
+    return sign
 
 def new_position(unit1, unit2, variance = 20):
     distance_to_move, sign = get_distance(unit1, unit2)
