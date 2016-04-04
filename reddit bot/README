@@ -1,0 +1,3 @@
+A reddit bot made using Python Reddit API Wrapper (PRAW) for monitoring Gears of
+War 4 Beta news as it is posted to Reddit. Based on the tutorial  made by
+/u/_Daimon_ found at http://praw.readthedocs.org/en/stable/pages/writing_a_bot.html
