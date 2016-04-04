@@ -29,5 +29,6 @@ def bystringiter():
 if __name__ == "__main__":
     # maybe some day I'll be able to run something like this
     # apparently will take about 3.867 x 10^90 gbs of space to print
+    # there are 10^80 particles in the universe
     bypowers()
     bystringiter()
