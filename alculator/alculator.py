@@ -98,6 +98,10 @@ if __name__ == "__main__":
     bush = Drink(40, 350, 5.00, "Bushmills (350ml)")
     bush.describe()
     print "---------"
+    huzzar = Drink(37.5, 200, 6.00, "Huzzar 20cl")
+    huzzar.describe()
+    print "---------"
+
     print "Some comparisons."
     bush.compare(capn2)
     print "---------"
