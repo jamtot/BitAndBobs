@@ -1,0 +1,36 @@
+https://www.reddit.com/r/dailyprogrammer_ideas/comments/4e6imk/easy_a_guessing_game_with_your_computer/
+
+[Easy] A guessing game with your computer
+
+Description
+
+Your computer is keeping a secret from you, and you'll have to go through a whole charade of playing guessing games to know what it is.
+Your task is to design a program that generates a random integer between a given minimum and maximum value but doesn't tell you what that number is.
+Instead you have to make your program accept a guess as an input which you will make, and your computer has to respond if your guess is lower than the actual number, higher than the actual number, or if it is correct.
+Example
+
+(Your computer has generated the number 6 between given range of 0 to 10 inclusive, though you do not know this and you make your first guess)
+you> 8
+computer> Your guess is higher
+you> 3
+computer> Your guess is lower
+you> 5
+computer> Your guess is lower
+you> 7
+computer> Your guess is higher
+you> 6
+computer> Your guess is correct
+Inputs and outputs
+
+The program will take the maximum and minimum values to generate a number between (inclusive) for input.
+Input 1
+0 20
+Input 2
+13 52
+The final version of the program should not output the number and only way to get the value of that number would be to play the guessing game. (You may obviously peek at the value while debugging, otherwise you will be struck in an endless guessing cycle if the program has errors!)
+Guesses
+Then program will accept inputs between the minimum and maximum and output "Your guess is higher", "Your guess is lower", or "Your guess is correct" as illustrated in the example.
+Bonus Input
+
+0 200
+Try to successfully guess that 3 times in as little steps as possible!
