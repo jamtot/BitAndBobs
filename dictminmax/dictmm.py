@@ -1,4 +1,4 @@
-d = {"Illinois": ['13', '12', '18', '23', '26', '25', '24', '19', '13', '10', '15', '14', '14', '4', '3'],
+d = {"Illinois": ['', '12', '18', '23', '26', '25', '24', '19', '13', '10', '15', '14', '14', '4', '3'],
 "Indiana": ['7', '6', '7', '8', '11', '11', '13', '12', '7', '7', '7', '7', '9', '2', '2']}
 
 if __name__ == "__main__":
@@ -6,7 +6,17 @@ if __name__ == "__main__":
 
     for state in d:
         # returns the numbers with their index (#, index)
-        pairs = [(int(d[state][x]), x) for x in xrange(len(d[state]))]
+        pairs = [(int(d[state][x]), x) for x in xrange(len(d[state])) 
+            if d[state][x].isdigit()] # added if for some error detection
+
+        """# for avoiding converting non-digits.
+        pairs = []
+        for x in xrange(len(d[state])):
+            try:
+                pairs.append( (int(d[state][x]), x) )
+            except ValueError:
+                pass # not a valid number"""
+    
         minpair = min(pairs)
         maxpair = max(pairs)
         print "%s: %d in index %d and %d in index %d"%(state,maxpair[0],maxpair[1],
